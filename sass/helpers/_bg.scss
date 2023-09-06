@@ -1,0 +1,168 @@
+
+section[class*='section']{background-attachment: fixed;}
+
+.bg-accent{background-color:$accent!important; }
+.bg-secondary{background-color:$secondary!important; }
+.bg-primary{background-color:$primary}
+.bg-light{background-color:$primary-light}
+.bg-white{background-color:#fff}
+
+.bg-grad-primary{@include diagonalGradient($primary-dark, $primary-light);}
+.bg-grad-secondary{@include diagonalGradient($secondary-dark, $secondary-light);}
+.bg-grad-accent{@include diagonalGradient($accent-dark, $accent-light);}
+.bg-grad-light{@include diagonalGradient(#00F08A, #00FED1);}
+
+.bg-grad-intro{
+	background-color:$primary; 
+	background-image: -webkit-radial-gradient(100% 100%,ellipse farthest-side,#9bffd8  20%, $primary-light 50%, $secondary 110%);
+	background-image: radial-gradient(ellipse farthest-side at 100% 100%,#9bffd8  20%, $primary-light 50%, $secondary 110%);
+}
+
+.bg-dark-transp{background-color:rgba(#333, .3);}
+.bg-white-transp{background-color:rgba(#fff, .3);}
+
+.bg{background-color:$bg;}
+
+.bg-pattern{
+	background-image: url(../images/bg/bg-pattern.svg), -webkit-linear-gradient(315deg, $primary, $primary-dark);
+    background-image: url(../images/bg/bg-pattern.svg), linear-gradient(135deg, $primary, $primary-dark);
+    background-size: cover, auto;
+    background-repeat: no-repeat, repeat;
+    background-position: 0px 0px, 50% 50%;
+}
+
+.bg-city{overflow: hidden;
+  background-image: -webkit-linear-gradient(315deg, rgba($primary, .8), rgba($primary-dark, .7)), url("../images/bg/bg-city.jpg");
+  background-image: linear-gradient(135deg, rgba($primary, .8), rgba($primary-dark, .7)), url("../images/bg/bg-city.jpg");
+  background-position: 0px 0px, 50% 50%;
+   background-size: auto, cover; 
+}
+
+.bg-img1{overflow: hidden;
+  background-image: -webkit-linear-gradient(315deg, rgba($primary, .8), rgba($primary-dark, .7)), url("../images/bg/bg-gadget1.jpg");
+  background-image: linear-gradient(135deg, rgba($primary, .8), rgba($primary-dark, .7)), url("../images/bg/bg-gadget1.jpg");
+  background-position: 0px 0px, 50% 50%;
+   background-size: auto, cover; 
+}
+
+.bg-img2{ overflow: hidden;
+  background-image: -webkit-linear-gradient(315deg, rgba($primary, .8), rgba($primary-dark, .9)), url("../images/bg/bg-man-tablet.jpg");
+  background-image: linear-gradient(135deg, rgba($primary, .8), rgba($primary-dark, .9)), url("../images/bg/bg-man-tablet.jpg");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+}
+
+.bg-img3{ overflow: hidden;
+  background-image: -webkit-linear-gradient(315deg, rgba($primary-light, .8), rgba($primary-dark, .9)), url("../images/bg/bg-laptop.jpg");
+  background-image: linear-gradient(135deg, rgba($primary-light, .8), rgba($primary-dark, .9)), url("../images/bg/bg-laptop.jpg");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+}
+
+.bg-wave{
+  position:relative;
+  &:after{
+    content: "";
+    opacity:1;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index:0;
+    background: url("../images/bg/bg-wave.svg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .container{position:relative; z-index:2}
+}
+
+.bg-lines{position:relative;
+  &:after{
+    content: "";
+    opacity: 0.2;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index:0;
+    background: url("../images/bg/lines.svg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .container{position:relative; z-index:2}
+}
+
+
+.bg-particles{ position:relative; 
+  #particles-js {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      z-index:0;
+  }
+}
+
+.bottom-wave{ position: relative; min-height:170px;
+    &:after {
+      display: block;
+      content: '';
+      height: 100%;
+      background: url(../images/bg/waves.svg) bottom repeat-x;
+      background-size: contain;
+      position: absolute;
+      bottom: -1px;
+      left:0;
+      right:0;
+      z-index: 1;
+    }
+}
+
+
+
+[class*="overlay-"] { position:relative;
+	&:before{position:absolute; content:""; display:block; top:0; left:0; right:0; bottom:0; z-index:10;
+		@include diagonalGradient($primary-dark, $primary); opacity:.7;
+	}
+	&:hover:before{opacity:.3; transition:.5s}
+}
+
+.overlay-primary{
+	&:before{@include diagonalGradient($primary-dark, $primary); }
+}
+
+.overlay-primary{
+	&:before{@include diagonalGradient($primary-dark, $primary); }
+}
+.overlay-secondary{
+	&:before{@include diagonalGradient($secondary, $secondary-light); }
+}
+.overlay-accent{
+	&:before{@include diagonalGradient($accent, $accent-light); }
+}
+.overlay-light{
+	&:before{@include diagonalGradient($primary, $primary-light); }
+}
+
+
+.aside-full{
+  position:relative;
+  .heading-wrap {position:relative; z-index:10;}
+}
+.bg-aside-left{
+  box-shadow:inset 0 0px 30px rgba(#ccc, .3);
+  background-color:#fff;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  z-index: 0;
+  width: 300%;
+  right: 0;
+}

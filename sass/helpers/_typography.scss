@@ -1,0 +1,57 @@
+/* --------------------- titles ---------------------- */
+h5, .h5{font-size:15px;}
+
+.section-title{font-weight:bold;  font-size:42px; line-height:1.3; font-family:$font-title, sans-serif; margin-top:0; margin-bottom:10px;  
+	span{font-weight:bold}
+}
+.section-lead{ margin-top:10px;  margin-left:auto; margin-right:auto; max-width:600px;}
+
+.title-text{margin-bottom:15px; margin-top:0; }
+.title-text + .title-text{margin-top:15px;}
+
+.title-lg{font-size:34px; margin-bottom:15px; margin-top:0; line-height:1.5; font-weight:400; font-family:$font-title;}
+.title-block{font-size:30px; margin-bottom:30px; font-weight:400; font-family:$font-title;}
+.title-article{font-size:24px; margin-bottom:30px; font-weight:400; font-family:$font-title;}
+
+.rtl{direction:rtl;}
+.ltr{direction:ltr;}
+
+.nav a{color:inherit}
+
+.text-primary, .primary {color:$primary;}
+.text-secondary, .secondary {color:$secondary;}
+.text-accent, .accent {color:$accent;}
+.text-light, .light {color:$primary-light;}
+
+.white, .text-white{color:#fff;}
+.white-transp{color:rgba(#fff, .6); }
+.dark, .text-dark{color:#333;}
+.dark-transp{color:rgba(#333, .6);}
+
+.text-disable{color:rgba(#000, .4)}
+
+.text-center, .txt-center{text-align:center}
+
+.text-feature-wrap{ padding:60px;}
+
+.text-lg{font-size:16px;}
+
+/* ==================  article ================ */
+.article{
+	a:not(.btn){border-bottom:1px dashed $accent; color:$accent-dark;
+		&:hover{color:$primary; border-bottom-color:$primary}
+	}
+	
+	p{margin-bottom:15px;}
+	img{vertical-align:baseline; margin-top:10px; margin-bottom:10px; border:1px solid #ddd; background-color:#fff; padding:3px; }
+	img[align='left'], img.pull-left{margin-right:15px;}
+	img[align='right'], img.pull-right{margin-left:15px;}
+	.title {padding:10px 0;}
+	 ul {margin:7px 15px; }
+	 ul ul {margin:7px; margin-left:30px;}
+}
+
+
+.uppercase{text-transform:uppercase}
+.b{font-weight:bold}
+.label{ font-weight:normal; margin-right:5px;}

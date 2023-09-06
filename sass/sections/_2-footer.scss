@@ -1,0 +1,29 @@
+
+/* ================ SECTION-FOOTER ==================  */
+.section-footer{
+	font-size:14px; font-weight:300;
+	.center{text-align:center}
+	.right{text-align:right} 
+	
+	.footer-about-wrap{
+		p{margin-bottom:20px;}	
+	}
+	.footer-top{ border-bottom:1px solid rgba(#fff, .3);
+		.title{font-weight:bold;}
+		.list-nav{
+			a:hover{text-decoration:underline; }
+		}
+	}
+	a{color:inherit;}
+	.list-inline{margin-top:7px;
+		a{padding:4px 7px; font-weight:500;}
+	}
+}
+
+.footer-bottom{padding:15px 0; font-size:13px; line-height:1.4;
+	
+	li a{ 
+		&:hover{color:$accent}
+	}
+	
+}

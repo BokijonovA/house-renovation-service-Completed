@@ -1,0 +1,163 @@
+
+
+.center{margin-left:auto; margin-right:auto;}
+
+.screen-height{height:100vh;}
+
+.overflow-hide, .overflow-h{overflow:hidden}
+
+.flip-h{
+    -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+}
+
+.shadow{box-shadow:0 4px 10px rgba(#222, .4); }
+.shadow-sm{box-shadow:0 2px 4px rgba(#666, .15), 0 0px 1px rgba(#333, .15) ; }
+.shadow-in{box-shadow:inset 0 2px 4px rgba(#333, .4)}
+
+[class*="hover-"]{transition:.5s;}
+.hover-shadow:hover{box-shadow:0 4px 15px rgba(#333, .5); transition:.5s;   }
+.hover-bg:hover{ @include diagonalGradient($primary, $primary);  transition:.5s; }
+.hover-icon-rotate:hover i{
+	transition:.5s;
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+}
+
+.panel-body{
+	.iconbox{margin-top:15px;}
+}
+
+.hover-scroll{ position: relative;  overflow: hidden; cursor:zoom-in;
+img{
+	position:absolute; top:0; transition:all linear;
+}
+// 	img:hover {  
+// 		transform:translateY(calc(-100% - 50%)); transition:all 2s linear 0s;
+// 	 }
+}
+
+
+/* borders */
+.border-left{border-left:1px solid rgba(#999, .3);}
+.border-right{border-right:1px solid rgba(#999, .3);}
+.border-top{border-top:1px solid rgba(#999, .3);}
+.border-bottom{border-bottom:1px solid rgba(#999, .3);}
+
+.border-left-white{border-left:1px solid rgba(#fff, .4);}
+.border-right-white{border-right:1px solid rgba(#fff, .4);}
+.border-top-white{border-top:1px solid rgba(#fff, .4);}
+.border-bottom-white{border-bottom:1px solid rgba(#fff, .4);}
+
+.border-cols {overflow:hidden; 
+	> [class*='col-']{box-shadow: 0 0 0 1px #e7e8ea; border-collapse:collapse}
+}
+
+
+.round-corner, .border-round{border-radius:$radius; -moz-border-radius:$radius; -webkit-border-radius:$radius;}
+.round, .circle{border-radius: 100%; -moz-border-radius: 100%; -webkit-border-radius: 100%;}
+
+.block-inline{display:inline-block}
+
+.border{border:1px solid red;}
+.relative{position:relative}
+.absolute{position:absolute}
+
+
+.p5{padding:5px;} .p10{padding:10px;} .p15{padding:15px;} .p20{padding:20px;} .p30{padding:30px;} .p40{padding:40px;} .p50{padding:50px;} .p60{padding:60px;} 
+.pl15{padding-left:15px} .pl30{padding-left:30px} .pl60{padding-left:60px}
+.pr15{padding-right:15px} .pr30{padding-right:30px} .pr60{padding-right:60px}
+.pt15{padding-top:15px} .pt30{padding-top:30px}
+.pb15{padding-bottom:15px} .pb30{padding-bottom:30px}
+.padding-vert{padding-top:30px; padding-bottom:30px}
+
+.m5{margin:5px;} .m10{margin:10px;} .m15{margin:15px;} .m30{margin:30px;} .m40{margin:40px;} .m50{margin:50px;} .m60{margin:60px;}
+.mt15{margin-top:15px} .mt30{margin-top:30px}  .mt60{margin-top:60px} 
+.mb0{margin-bottom:0px} .mb15{margin-bottom:15px} .mb30{margin-bottom:30px}
+.ml10{margin-left:10px;} .mr10{margin-right:10px;}
+
+.min-h-300{min-height:300px}
+.min-h-350{min-height:350px}
+.min-h-400{min-height:400px}
+.min-h-500{min-height:500px}
+
+.blocks-eq-280{
+	.block-lg{min-height:280px;}
+}
+
+.flex{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+.flex-center{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+/* horizontal line */
+hr{ border-color:rgba(200,200,255,.5);}
+
+var{font-style:normal;}
+
+.form-noborder{
+	input{border:none}
+}
+
+/* all clearfix */
+article:after,
+article:before,
+.form-group:before,
+.form-group:after,
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.panel-body:before,
+.panel-body:after,
+.blok:before,
+.blok:after,
+.row-sm:before,
+.row-sm:after{
+  display: table;
+  content: " ";
+}
+article:after,
+.row-sm:after,
+.container:after,
+.form-group:after,
+.panel-body:after,
+.blok:after,
+.container-fluid:after {
+	clear: both;
+}
+/*  clearfix mini */
+.cfx:before, .cfx:after { content:"";  display:table;}
+.cfx:after { clear:both;}
+.hide {display: none !important;}
+
+
+/* -------------------- helpers for Bootstrap --------------------- */
+.no-gutter{ margin-right: 0px;  margin-left:0px;}
+.no-gutter{ padding-right: 0px;  padding-left:0px;}
+.no-gutter > [class*='col-'] {    padding-right:0;     padding-left:0; }
+
+.row-sm {  margin-right: -5px;  margin-left: -5px;}
+.row-sm > [class*="col-"] {  padding-left:5px;  padding-right:5px;}
+@media (min-width: 768px) {
+	.col-5-1 {width:20%; float: left!important; } 
+}
+
+ul.row{
+margin-right: -15px!important;
+margin-left: -15px!important;
+}
+

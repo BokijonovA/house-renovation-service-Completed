@@ -1,0 +1,40 @@
+/* ======= social icons======= */
+.social-links-wrap{
+  a{color: rgba(#fff, .7); }
+  a:hover{color: #fff; }
+  i{font-size: 20px; width:15px;}
+  .facebook{background-color: #405D9D}
+  .twitter{background-color: #42AEEC}
+  .instagram{background-color: #C8046C}
+  .youtube{background-color: #E52D27}
+  
+  .btn-outline{border-color:rgba(#fff, .3)!important;}
+}
+
+.btn{font-weight:500;
+	i{ margin-right:5px;}
+	&:hover{box-shadow: 0 5px 10px 0 rgba(30, 35, 40, .3); }
+}
+.btn{ font-weight:400;  }
+.btn-lg{ font-weight:400; }
+.btn-default{background-color:#fff; 
+	&:hover{background-color:#fff;  color:$accent}
+}
+
+.btn-primary{@include diagonalGradient($primary-dark, $primary-light); border-color:$primary;}
+
+.btn-warning{
+	transition: all .3s;
+	color:#fff; border-color:$accent;
+	border-radius:6px;
+	background-image: -webkit-linear-gradient(315deg, $accent, $accent-light);
+	background-image: linear-gradient(135deg, $accent, $accent-light);
+	
+}
+
+.btn-round{border-radius:30px!important; padding-left:20px; padding-right:20px;}
+
+.btn-secondary{@include diagonalGradient($secondary, $secondary-light); color:#fff; border-color:$secondary;}
+.btn-light{@include diagonalGradient(#00F08A, #00FED1); color:#fff; 
+	&:hover{color:#fff;}
+}

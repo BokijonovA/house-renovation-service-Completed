@@ -1,0 +1,35 @@
+
+// !!! I DONT RECOMMENT TO ADD STYLES IN THIS FILE.
+// MAIN EDITABLE FILE IS: base.scss and inside /sections/
+// AND OTHER IMPORTED FILE ALSO CAN BE EDITED
+
+/* ========================
+Project: www.templatemount.com by Vosidiy M. 
+===================== */
+
+@import "vars"; 
+@import "mixins";
+
+/* ================== COMMON =================== */
+@import "base"; 
+
+/* ================== SECTIONS =================== */
+@import "sections/0-header-navbar";
+@import "sections/1-header-intro";
+@import "sections/2-footer";
+
+/* ================== COMPONENTS =================== */
+@import "components/buttons";
+@import "components/iconbox";
+@import "components/cards";
+@import "components/elements.scss";
+@import "components/navs";
+
+/* ================== HELPERS  =================== */
+@import "helpers/helpers"; 
+@import "helpers/bg";
+@import "helpers/typography"; 
+@import "helpers/bootstrap-overwrites";
+@import "helpers/plugins-overwrites";
+
+

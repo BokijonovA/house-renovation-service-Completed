@@ -1,0 +1,33 @@
+/* OWL CAROUSEL RESTYLE */
+.owl-theme{
+	.owl-prev, .owl-next { transition:.5s;
+		border-radius:10px;
+	    color:$accent;
+	    text-align:center;
+	    padding:15px 15px;
+	    top:42%; transform: translateY(-45%);
+	    font-size:26px;
+	    background-color: $bg;
+	    i{ display:block;}
+	}
+	.owl-prev:hover, .owl-next:hover{background:$accent; transition:.5s; color:#fff;}
+	.owl-prev{ left: -60px; content:"<";  }
+	.owl-next { right: -60px; content:">";}
+	.owl-dots .owl-dot.active span, , .owl-dots .owl-dot:hover span{background-color:#fff;}
+	.owl-dots .owl-dot span{background-color:rgba(#fff,.5)}
+}
+
+.owl-theme.theme-light{
+	.owl-prev, .owl-next {transition:.5s; background-color:#fff;}
+	.owl-prev:hover, .owl-next:hover{background:$accent; transition:.5s; color:#fff;}
+	.owl-dots .owl-dot.active span, , .owl-dots .owl-dot:hover span{background-color:#ddd;}
+	.owl-dots .owl-dot span{background-color:rgba(#333,.7)}
+}
+
+.owl-theme.theme-dark{
+	.owl-prev, .owl-next {transition:.5s; background-color:$primary-dark; color:#fff;}
+	.owl-prev:hover, .owl-next:hover{background:$primary-light; transition:.5s; color:#fff;}
+	.owl-dots .owl-dot.active span, , .owl-dots .owl-dot:hover span{background-color:#ddd;}
+	.owl-dots .owl-dot span{background-color:rgba(#666,.7)}
+}
+

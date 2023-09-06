@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2188px" height="281px" viewBox="0 0 2188 281" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>waves2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="20.1863527%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.35" offset="0%"></stop>
+            <stop stop-color="#F1F3F5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="waves2">
+            <g id="Background-1" transform="translate(-47.000000, -868.000000)">
+                <path d="M47,1014.09495 C250.987632,1059.01822 404.056585,1077.59878 506.20686,1069.83664 C659.432272,1058.19343 696.871965,1009.49399 879.910466,1004.21129 C1062.94897,998.928593 1172.49474,1069.83664 1378.41305,1069.83664 C1584.33136,1069.83664 1682.88268,956 1950,956 C2037,956 2132,975.364983 2235,1014.09495 L2235,1149 L47,1149 L47,1014.09495 Z" id="Path" fill="url(#linearGradient-1)"></path>
+                <path d="M2235.43931,987.583909 C2150.75843,1014.76158 2073.4251,1025.66188 2003.43931,1020.28479 C1845.97129,1008.18634 1890.5459,981.489247 1702.43931,976 C1514.33272,970.510753 1445.05922,1066 1233.43931,1066 C1021.8194,1066 860.840547,892.954045 553.93931,894 C301.43931,894.860549 206.180542,941.878653 48,987.583909 L43,1149 L2235.43931,1149 L2235.43931,987.583909 Z" id="Line" fill="#D8D8D8" opacity="0.208559783" transform="translate(1139.219655, 1021.497639) scale(-1, 1) translate(-1139.219655, -1021.497639) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

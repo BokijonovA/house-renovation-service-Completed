@@ -1,0 +1,153 @@
+/* ==================== INCLUDE FONTS ======================= */
+@import url(../fonts/roboto/font.css);
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,600');
+// font-family: 'Dosis', sans-serif;
+
+img{max-width:100%;}
+
+/* ------------------ a links --------------------- */
+a { text-decoration: none; transition:all .3s;  color:inherit }
+a:hover{text-decoration: none; transition:all .3s;  }
+a:focus, .focus {  outline:none; color:none}
+
+/* ============ text styles and paragraph ==============  */
+body, form {font-size:15px; font-weight:400; font-family:$font-normal; line-height:1.7 }
+p{padding:0px; margin:0; margin-bottom:7px;}
+ol, ul, li{margin: 0; padding: 0;}
+
+
+
+/* ================== BASIC STRUCTURE ==================  */
+.section-heading{text-align:center; margin-bottom:30px; 
+	.section-title{display:inline-block;  max-width:700px; }
+	img{margin-bottom:15px;}
+}
+
+.padding-sect{padding-top:60px;  padding-bottom:50px;}
+.padding-top-sect{padding-top:60px;}
+.padding-bottom-sect{padding-bottom:50px;}
+
+.padding-sect-sm{padding-top:30px;  padding-bottom:20px;}
+
+
+
+/* ================== SECTION ==================  */
+.section-showcase-center{
+  .img-wrap{margin-bottom:45px;}
+}
+
+/* ================== SECTION ==================  */
+.section-showcase-side{ overflow:hidden;
+	.img-sm{width:450px;}
+	.img-lg{max-width:none; width:1100px;}
+}
+
+/* ================== SECTION ==================  */
+.section-showcase-tab{ overflow:hidden;
+	.img-sm{width:450px;}
+	.img-lg{width:auto; max-width:none; max-height:700px;}
+}
+
+
+/* ================== SECTION ==================  */
+.section-action-style2{ background-color:$primary; color:#fff; 
+  p{text-align:center; max-width:600px; margin-left:auto; margin-right:auto}
+  .title{ margin-bottom:15px;}
+}
+
+
+/* ================== SECTION ==================  */
+.section-download{position: relative;
+  .section-title{margin-bottom:30px;  }
+}
+
+
+
+
+/* ================== SECTION ==================  */
+.section-partners{ 
+	.panel-lg{overflow:hidden; max-width:800px;}
+}
+
+.partners-wrap{
+	a { width:25%; height:100px;  display: block;  float: left; background-color:#fff; 
+          box-shadow: 0 0 0 1px #e7e8ea; text-align: center; background-color:#fff; }	
+    img { max-width: 100%; max-height:60px; margin:20px }
+}
+
+/* ================== SECTION ==================  */
+.section-tab-hor{
+	.nav{margin-bottom:30px;
+		li a{color:rgba(#fff, .7); font-size:18px;}
+		li a:hover{ background-color:transparent; color:#fff;}
+		li.active a{@include diagonalGradient($accent, $accent-light); color:#fff;}
+	}
+}
+
+
+/* ================== SECTION ==================  */
+.section-review{ 
+	.owl-item{padding-left:3px; padding-right:3px;}
+	.reviews-wrap{padding:50px;}
+}
+
+
+/* ================== SECTION ==================  */
+.section-showcase-side{ overflow:hidden;
+	.img-phone-side{width:450px;}
+	.img-laptop-side{max-width:none; width:1100px;}
+	.img-web-side{max-width:none; width:1000px;}
+}
+
+
+/* ================== SECTION ==================  */
+.section-showcase{ }
+.showcase-center{text-align:center;
+	img{max-width:300px;}
+}
+.showcase-left, .showcase-right{
+	padding-top:30px;
+	.iconbox{margin-top:50px;}
+}
+
+.showcase-left{text-align:right}
+
+
+/* ================== SECTION ==================  */
+.section-videoclick{
+	.vide-link-wrap{padding:45px 0;}
+}
+
+
+/* ================== SECTION ==================  */
+.section-showcase-center{text-align:center;
+	img{margin-top:-200px; max-width:980px}
+}
+
+/* ================== SECTION  ==================  */
+.section-pricing-aside{ border-bottom:1px solid #ddd;
+	.section-heading{text-align:left;  margin-right:10%;}
+}
+
+.pricing-double-wrap{ text-align:right;
+	.item-pricing{width:49%; text-align:left; display:inline-block; vertical-align:middle; }
+	.item-pricing{
+		li::before{color:rgba(#333, .4)}
+	}
+	.item-pricing.best{margin-right:-20px; z-index:3; position:relative;
+		li::before{color:rgba(#fff, .4)}
+	}
+}
+
+/* ================== SECTION  ==================  */
+.section-tab-hor{ padding-bottom:0;
+	.bottom-area{
+		height:200px; margin-top:-200px;
+		background-color: $bg;
+	}
+}
+
+
+
+/* ================== scroll top btn ================== */
+.topHome {position: fixed; color:#fff;  background-color:rgba(0,0,0,.3); padding:7px; bottom:1%;    right: 1%;z-index: 5;}

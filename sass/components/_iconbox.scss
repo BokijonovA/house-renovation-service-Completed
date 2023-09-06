@@ -1,0 +1,65 @@
+
+
+/* =================  ICONBOXES =================== */
+.iconbox{ position: relative; margin-bottom:15px;
+	.text-wrap{ margin-top: 15px; 
+		p{line-height: 1.6; }
+	}
+	.text{
+		padding-bottom:15px;
+	}
+	.title{  margin-bottom:10px; line-height: 1.5; }
+	.img-wrap{
+		float:left; 
+		display:inline-block; overflow:hidden;
+		width:50px;  height:50px; 
+	}
+	.img-lg{width:70px;  height:70px; }
+	.icon{position:relative; text-align: center; display:inline-block;  }
+}
+
+.icon-normal {position:relative; text-align: center; display:inline-block;  font-size:28px; }
+.icon-shape{ 
+	position:relative; border-radius:$radius-lg;
+	width:60px;  height:60px;  line-height:60px; 
+	font-size:32px; color:#fff; text-align: center;
+	display:inline-block; 
+	box-shadow: 0 6px 7px 0 rgba(40, 45, 50, .1);
+}
+
+.iconbox-center {text-align:center;  margin-right: 5%;  margin-left: 5%; }
+
+.iconbox-aside{ 
+	.icon-normal{ float:left; }
+	.icon-shape{float:left; top:10px;  }
+	.title{margin-top:5px; margin-bottom:4px;}
+	.text-wrap{padding: 0 15px; margin-top:0px; overflow: hidden;}
+}
+
+
+/* =================  DEFINED VARIABLES =================== */
+
+.icon-sm{ width:46px;  height:46px;  line-height:46px; font-size:22px; }
+.icon-md{ width:46px;  height:46px;  line-height:46px; font-size:28px; }
+.icon-lg{ width:80px;  height:80px;  line-height:80px; font-size:42px; }
+
+.icontext{
+	.icon{float:left; text-align:center}
+	.text{display:block; overflow:hidden; padding-left:15px}
+	.title{margin-top:0px}
+}
+
+.iconline{
+	i{display:inline-block; text-align:center; vertical-align:middle; margin-right:10px; min-width:20px; font-size:22px;}
+}
+
+.imgtext{
+  .img{float:left; overflow:hidden;
+    width:56px;  height:56px; object-fit:cover;
+  }
+  img.pull-left{margin-right:30px;}
+  img.pull-right{margin-left:30px;}
+  .img-lg{width:70px;  height:70px; }
+  .text{display:block; overflow:hidden; }
+  .title{margin:0px}
+}

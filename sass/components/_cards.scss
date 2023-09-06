@@ -1,0 +1,23 @@
+
+// card
+.card{position:relative; margin-bottom:30px; display: block; border-radius:$radius; overflow:hidden; transition:.3s;
+  .img-wrap{display:block; height:200px; overflow:hidden;  background-color:$primary; }
+  img{width:100%;}
+  .text-wrap{padding:15px; overflow:hidden; box-shadow:inset 0 2px 7px rgba(#333,.2); border-top:1px solid #eee;}
+  .title{margin-bottom:10px;  font-weight:normal; font-weight:500; }
+  p{color:$text-muted}
+  
+  &:hover{box-shadow:0 4px 12px rgba(#333, .35); transition:.5s;}
+  &:hover [class*="overlay-"]:before{opacity:0; transition:.5s}
+}
+
+.card-lg{
+  .img-wrap{height:500px;}
+}
+// card with img 
+.card-feature-img{
+  .title{margin-top:0;}
+	overflow:hidden;
+	height:220px;
+	img{max-width:none; }
+}

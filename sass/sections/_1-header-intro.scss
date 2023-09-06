@@ -1,0 +1,38 @@
+/* ================ section-INTRO ==================  */
+
+.icon-intro{
+	width:80px;
+	margin-bottom:7px;
+	border-radius: 15px;
+	box-shadow: 0 3px 6px 0 rgba(40, 43, 49, .08);
+}
+
+.intro-wrap{margin-top:180px; color:#fff; 
+	.title-intro{ font-size:46px; line-height:1.3; margin-bottom:15px; font-weight:600;  font-family:$font-title}
+	.lead{margin-bottom:30px;}
+}
+
+/* ----------------- INTRO STYLE ---------------- */
+.section-intro{min-height:720px;   position:relative;  background-color:$primary; 
+	.intro-img-wrap{ text-align:right;
+		.img-phone {max-width:350px; position:relative; top:100px;}
+		.img-hand{max-width:450px; position:absolute; bottom:0; right:10%;}
+	}
+	
+	.bottom-area, {
+		height:70px; margin-top:-20px;
+		background-color: $bg;
+	}
+	.bottom-wave{ margin-top:-50px;}
+}
+
+/* ----------------- INTRO STYLE ---------------- */
+.intro-center{
+	.intro-img-wrap{ text-align:center;
+		img {position:relative; top:40px;}
+	}
+}
+
+
+
+.section-pagetop{ @include diagonalGradient($primary-dark, $primary-light); padding-top:100px; }

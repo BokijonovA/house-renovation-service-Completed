@@ -1,0 +1,101 @@
+@import "vars";
+
+@media (max-width: 1200px) {
+	
+		.showcase-center img {  width:100%; max-width: 300px; }
+		.showcase-left, .showcase-right { padding-top:15px; 
+			.iconbox {
+			    margin-top:15px;
+			}
+		}
+
+}
+@media (max-width: 992px) {
+
+
+}
+@media (max-width: 768px) {
+	
+	.padding-sect{padding-top:30px; padding-bottom:25px;}
+	.flex{display:block;}
+	img{margin-bottom:7px;}
+	.navbar-brand{ color:$primary!important; font-size:24px;   }
+
+	.section-showcase{
+		.iconbox{width:50%; float:left; margin-top:0; padding:0 15px; text-align:center}	
+	}
+
+	
+	.section-heading{margin-bottom:20px; 
+		.section-title{ font-size:32px; }
+	}
+
+	.navbar{background-color:$bg;
+		.navbar-collapse{border-color:#ddd;}
+	}
+
+	.section-intro{ min-height:450px;
+		.intro-img-wrap{ text-align:center;
+			.img-phone {width:100%; max-width:370px; position:relative; top:30px;}
+			.img-hand{width:100%;  max-width:450px; margin:0; position:static; }
+		}
+		.intro-wrap{margin-top:80px; text-align:center;
+			.title-intro{ font-size:32px;}
+			.lead{ font-size:16px;  margin-bottom:30px;}
+		}
+		.bottom-area{height:50px;}
+	}
+	.bottom-wave{ min-height:70px;}
+
+	
+	.text-feature-wrap{padding:15px;}
+	.title-lg{font-size:32px; line-height:normal; margin-top:15px;}
+
+
+
+	.section-review{ 
+		.reviews-wrap{padding:0px;}
+	}
+	.section-intro-video{ min-height:650px;
+		.play{margin-top:70px;}
+	}
+
+	.partners-wrap {
+		a{width:50%; height:80px;}
+		img{margin:7px;}
+	}
+	.owl-carousel{
+		.owl-nav{display:none;}
+	}
+
+
+	.section-showcase-side{ overflow:hidden;
+		.img-phone-side{width:450px;}
+		.img-laptop-side{max-width:none; width:600px;}
+		.img-web-side{max-width:none; width:600px;}
+	}
+
+	.pricing-double-wrap{
+		.item-pricing{width:100%; float:none;}
+		 .item-pricing.best {  margin-right:0px; 	}
+	
+	}
+	
+	.section-footer{
+		.center{text-align:left}
+		.right{text-align:left} 
+	}
+	.footer-about-wrap{margin-bottom:30px;}
+
+	.block-lg{
+		form{padding:7px;}
+	}
+
+}
+
+@media all and (max-width:620px) {   /* mobile devices */
+
+	.videolink{ text-align:center;
+		.text{display:block}
+	}
+}
